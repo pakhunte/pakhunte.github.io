@@ -1,0 +1,107 @@
+<!-- jQuuey, HTML, Java, CSS -->
+<!-- Bree, Pratima, Jacky 
+CollegeWebapp, 7/22- -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> UC Berkeley</title>
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+<style>
+body {
+	background-color: #009999;
+}
+table ,th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	border-width: 7px;
+	border-color: green;
+}
+th, td {
+    padding: 20px;
+}
+table {
+    border-spacing: 15px;
+}
+</style>
+<img src="ucb1.jpg" alt="Ucb Campus" style="float:left;width:304px;height:228px;" align="left">
+<img src="ucb2.jpg" alt="ucb" style="float:right;width:304px;height:228px;" align="right">
+
+ <center><table  style="width:50%"> </center>
+ <h1> <center> <font size="800" color="1B8918">Quick Facts about UC Berkeley (2013-2014) </center> <img src="ucb.png" alt="UCI Logo" style="width:504px;height:300px;"> </h1> 
+  <tr>
+    <td>Tuition: </td>
+    <td>California residents: $12,804</td> 
+	<td>Nonresidents: $24,024 </td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>Enrollment: </td>
+    <td>New Freshman Applicants: 61,661</td> 
+	<td>New Freshman Enrolled: 5460</td>
+	<td>Acceptance Rate: 17.3% </td>
+	<td>High School GPA average: 4.39 </td>
+	<td> ACT Composite: 29 </td>
+	<td> SAT: 2090 </td>
+  </tr>
+  <tr>
+	<td>Graduation Rate: </td>
+	<td> Four year: 72% </td>
+	<td> Six year: 89% </td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+	<td> Degrees Awarded: </td>
+	<td>Bachelor's: 7,774 </td>
+	<td> Master's: 2,198 </td>
+	<td> Ph.D/Ed.D: 932 </td>
+	<td> M.D.: 372 </td>
+	<td></td>
+	<td></td>
+  <tr>
+	<td> Workforce: </td>
+	<td> Campus staff: 5,000 </td>
+	<td> Student Employees: 7,000 </td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</table>
+</head>
+
+<script>
+
+function doSomething() {
+	var myText = document.getElementById("myTextBox").value;
+    document.getElementById('exp').innerHTML = myText;
+}
+</script>
+
+<body>
+		<div>
+            <h3><span style="background-color: #009999;"></span></h3>
+       </div>
+<img src="ucb3.jpg" alt="ucb3" style="float:left;width:304px;height:228px;" align="left">
+<img src="ucb4.jpg" alt="ucb4" style="float:right;width:304px;height:228px;" align="right">
+
+
+<p> <font size="30" color="1B8918">Post your experiences here! Include your name and what year of college you are in.</p>
+	<!--form action="http://www.html.am/html-codes/textboxes/submitted.cfm"-->
+	<div id = "exp"> <font size="12" color="black"></font> </div>
+	<textarea name="myTextBox" id="myTextBox" cols="50" rows="5">
+	Enter some text...
+</textarea>
+<br />
+<input type="submit" onclick="doSomething()"/>
+
+
+
+</form>
+</body>
+</html>

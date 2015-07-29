@@ -1,0 +1,189 @@
+<!-- jQuuey, HTML, Java, CSS -->
+<!-- Bree, Pratima, Jacky 
+CollegeWebapp, 7/22- -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>CollegeWebapp</title>
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+<!-- CSS styles for standard search box -->
+<style type="text/css">
+	#tfheader{
+		background-color:#c3dfef;
+	}
+	#tfnewsearch{
+		float:right;
+		padding:20px;
+	}
+	.tftextinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:12px;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton {
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+	body {
+        background: url("http://georghubner.nl/wp-content/uploads/2015/05/background_flowers.jpg") no-repeat center center fixed;
+        background-size:cover;
+		}
+	
+	#content {
+		position: right;
+	}
+	#content img{
+		margin: 0;
+		padding: 10px 15px;
+		position: left;
+		top: 0;
+		left:0;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	
+	#main {
+		background-color: lightblue;
+		width: 300px;
+		padding: 25px;
+		border: 25px solid green;
+		margin: 66px;
+	}
+	
+	#outer { width: 600px;
+	padding: 25px;
+	margin: 100px;
+	}
+	#inner { width: 250px; margin: 0 auto; }
+	
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		float: left 
+		}
+	
+	a:link, a:visited {
+		display: block;
+		font-size: 20px;
+		width: 150px;
+		font-weight: bold;
+		color: #000000;
+		background-color: #6495ED;
+		text-align: center;
+		padding: 60px;
+		text-decoration: underline;
+		text-transform: lowercase;
+	}
+
+	a:hover, a:active {
+		background-color: #FFFFFF;
+	}
+	
+	.boxed {
+		border: 10px solid green;
+	}
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div  class="navbar-header"id="content">
+				<img src="file:///C:/Users/Girls%20Who%20Code%200967/Desktop/webapp/logo.JPG" class="logo"width="99" height="86">
+			</div>
+			<div>
+				<ul class="nav navbar-nav">
+				<li class="active"><a href="homepage.html">Home</a>
+				<li><a href="uci.html">UC Irvine</a>
+				<li><a href="ucb.html">UC Berkeley</a>
+				<li><a href="ucla.html">UCLA</a>
+
+			    </ul>
+			</div>
+		</div>
+	</nav>
+<!--SEARCH BAR-->
+	<div data-role="header" id="tfheader">
+		<div class="tfclear"></div>
+		<div id="main" class="ui-content" style="float: right">
+			<form method="post" action="demoform.asp">
+			<fieldset class="ui-field-contain">
+			  <p align="center">Sign In</p>
+				<label for="identifier">I'm a</label>
+				<select name="Grade Level" id="type">
+						<option value="High School">High School Student</option>
+						<option value="College">College Student</option>
+					<label for="password">Password</label>
+					<input type="text" name="password" id="password">   
+				</select>
+				<input type="submit" data-inline="true" value="Submit">
+			</fieldset>
+		</div>
+	</div>
+		
+	<div data-role="page"><!--HOMEPAGE STARTS-->
+	
+		<div id="outer" style="height:100%;width:300px;background-color: #EAE6D4">
+		  <div id="inner">Welcome to College Experience!</div>
+			<p>Here you'll learn about college from the actual college students themselves </p>
+		</div>
+	</div>
+	
+	<footer>
+	<br><br><br><br><br><br><br><br> </br></br></br></br></br></br></br>
+		<div class="boxed" id="outer" align="left" style="height:125px;width:1500px;background-color=6495ED;font-size:30"><font face="verdana" color="000000"> Acknowledgements:
+		 <br><br>Posted by: Pratima Khunte, Jacky Romero, and Brianna Willis (Girls Who Code)</br></br></font> 
+		</div>
+	</footer>
+ 
+
+
+
+ 
+</body>
+</html>

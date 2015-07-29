@@ -1,0 +1,230 @@
+<!-- jQuery, HTML, Java, CSS -->
+<!-- Bree, Pratima, Jacky 
+CollegeWebapp, 7/22- -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>CollegeWebapp</title>
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+<script>
+	function getIn() {
+		//var password = document.getElementById("password").value;
+		var select = document.getElementById("theOptions");
+		var selectedValue = select.options[select.selectedIndex].value;
+		var password = document.getElementById("password").value;
+		if (selectedValue === "High School") {
+			if (password  === "highss") {
+				alert("You are logged in as a HSS");
+			}
+			else {
+				alert("The login info was not correct");
+			}
+		} else if (selectedValue === "College"){
+			if (password === "colleges") {
+				alert("You are logged in as a CS");
+			}
+			else {
+				alert("The login info was not correct");
+			}
+		} 
+	}
+</script>
+<!-- CSS styles for standard search box -->
+<style type="text/css">
+	#tfheader{
+		background-color:#c3dfef;
+	}
+	#tfnewsearch{
+		float:right;
+		padding:20px;
+	}
+	.tftextinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:12px;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton {
+		margin: 0;
+		padding: 10px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:8px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+		position:absolute;
+		right:15px;
+	}
+	body {
+        background: url("http://georghubner.nl/wp-content/uploads/2015/05/background_flowers.jpg") no-repeat center center fixed;
+        background-size:cover;
+		}
+	
+	#content {
+		position: right;
+	}
+	#content img{
+		margin: 0;
+		padding: 10px 15px;
+		position: left;
+		top: 0;
+		left:0;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	
+	#main {
+		background-color: lightblue;
+		width: 200px;
+		padding: 50px;
+		border: 25px solid green;
+		margin: 66px;
+	}
+	
+	#outer { width: 600px;
+	padding: 100px;
+	margin: 100px;
+	}
+	#inner { width: 250px; margin: 0 auto; }
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		float: left 
+	}
+	
+	a:link, a:visited {
+		display: block;
+		font-size: 30px;
+		width: 150px;
+		font-weight: bold;
+		color: #000000;
+		background-color: #6495ED;
+		text-align: center;
+		padding: 60px;
+		text-decoration: underline;
+		text-transform: uppercase;
+	}
+
+	a:hover, a:active {
+		background-color: #FFFFFF;
+	}
+	
+	.boxed {
+		border: 10px solid green;
+	}
+
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</style>
+</head>
+<body>
+	<div id="content">
+		<img src="logo.jpg" class="logo"width="250" height="200" style="float:right">
+	</div>
+<h1> <center><font name="verdana" size="30">Welcome to College Experience!!!</font> </center> </h1>
+<h2><nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div  class="navbar-header"id="content">
+			</div>
+			<div>
+				<ul class="nav navbar-nav">
+				<li class="active"><a href="CollegeExpFINAL.html">Home</a>
+				<li><a href="uci.html">UC Irvine</a>
+				<li><a href="ucb.html">UC Berkeley</a>
+				<li><a href="ucla.html">UCLA</a>
+
+			    </ul>
+			</div>
+		</div>
+	</nav></h2>
+
+	
+	<!--<div id="tfheader">
+	
+		<div data-role="page" id="Home">
+		<center>
+	
+		<ul>
+		  <a href="CollegeExpFINAL.html">Home</a>
+		  <a href="uci.html">UC Irvine</a>
+		  <a href="ucb.html">UC Berkeley</a>
+		  <a href="ucla.html">UCLA</a>
+		</ul>
+		</center>
+		</div>-->
+		<!--<form id="tfnewsearch" method="get" action="http://www.google.com">
+		        <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value="Search our website"><input type="submit" value=">" class="tfbutton2">-->
+		
+		
+	<div class="tfclear"></div>
+		<div id="main" class="ui-content" style="float: right" align="right">
+    <form method="post" action="demoform.asp">
+      <fieldset class="ui-field-contain">
+	  <p align="center">If you are a high school student, enter the password: highss </p>
+	  <p align="center">If you are a college student, enter the password: colleges </p>
+	  <p align="center">Sign In</p>
+        <label for="identifier">I'm a</label>
+        <select name="Grade Level" id="theOptions">
+          <option value="High School">High School Student</option>
+          <option value="College">College Student</option>
+		<label for="password">Password</label>
+        <input type="text" name="password" id="password">   
+        </select>
+		<button type="button" onclick="getIn()">Submit</button>
+      </fieldset>
+	  </div>	
+	<div class="boxed" id="outer" style="height:465px;width:1000px;background-color: #3333FF;margin-left:500px">
+	  <center><img src="college.jpg" alt="collegeLogo" width="150px" height="125px"></center>
+	  <p> <center><font face="verdana" color="000000" size="10">Here you'll learn about college from the actual college students themselves!</font></center></p>
+	  
+	</div>		
+	</div>
+	
+	<footer>
+	<br><br> </br></br>
+		<div class="boxed" id="outer" align="left" style="height:130px;width:1500px;background-color=6495ED;font-size:30"><font face="verdana" color="000000"> Acknowledgements: </font>
+		 <br><br>Posted by: Pratima, Jacky, and Brianna (Girls Who Code)</br></br></font> 
+		 <br>Banner image provided by: http://stackoverflow.com/questions/18423004/html-css-creating-a-banner-header </br>
+		 <br>Login block code: http://stackoverflow.com/questions/15987140/how-to-check-if-an-item-is-selected-from-an-html-drop-down-list</br>
+		 <br>Help provided by: Mollee, Annie, and Angel</br>
+		 <br>Statistics: http://admission.universityofcalifornia.edu/campuses/irvine/freshman-profile/ </br>
+		</div>
+	</footer>
+ 
+
+
+
+ 
+</body>
+</html>
