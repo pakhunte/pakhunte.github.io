@@ -1,0 +1,104 @@
+<!-- jQuuey, HTML, Java, CSS -->
+<!-- Bree, Pratima, Jacky 
+CollegeWebapp, 7/22- -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> UCLA </title>
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+<style>
+body {
+	background-color: #009999;
+}
+table ,th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	border-width: 7px;
+	border-color: green;
+}
+th, td {
+    padding: 20px;
+}
+table {
+    border-spacing: 15px;
+}
+</style>
+<img src="front campus.jpg" alt="Ucla Campus" style="float:left;width:304px;height:228px;" align="left">
+<img src="ucla2.jpg" alt="ucla" style="float:right;width:304px;height:228px;" align="right">
+
+ <center><table  style="width:50%"> </center>
+ <h1> <center> <font size="800" color="1B8918">Quick Facts about UCLA (2013-2014) </center> <img src="ucla1.png" alt="UCLA Logo" style="width:504px;height:300px;"> </h1> 
+  <tr>
+    <td>Tuition: </td>
+    <td>California residents: $13,251</td> 
+	<td>Nonresidents: $37,959 </td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+    <td>Enrollment: </td>
+    <td>New Freshman Applicants: 60,690</td> 
+	<td>New Freshman Enrolled: 5460</td>
+	<td>Acceptance Rate: 35.4% </td>
+	<td> High School GPA average: 4.05
+	<td> ACT Composite: 27 </td>
+	<td> SAT: 1867 </td>
+  </tr>
+  <tr>
+	<td>Graduation Rate: </td>
+	<td> Four year: 68% </td>
+	<td> Six year: 85% </td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+  </tr>
+  <tr>
+	<td> Degrees Awarded: </td>
+	<td>Bachelor's: 6,261 </td>
+	<td> Master's: 1,255 </td>
+	<td> Ph.D/Ed.D: 435 </td>
+	<td> M.D.: 104 </td>
+	<td></td>
+	<td></td>
+  <tr>
+	<td> Workforce: </td>
+	<td> Campus staff: 4,951 </td>
+	<td> Student Employees: 7,093 </td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</table>
+</head>
+
+<script>
+
+function doSomething() {
+	var myText = document.getElementById("myTextBox").value;
+    document.getElementById('exp').innerHTML = myText;
+}
+</script>
+
+<body>
+<img src="ucla3.jpg" alt="uci1" style="float:left;width:304px;height:228px;" align="left">
+<img src="ucla4.jpg" alt="uci2" style="float:right;width:304px;height:228px;" align="right">
+
+
+<p> <font size="30" color="1B8918">Post your experiences here! Include your name and what year of college you are in.</p>
+	<!--form action="http://www.html.am/html-codes/textboxes/submitted.cfm"-->
+	<div id = "exp"> <font size="12" color="black"></font> </div>
+	<textarea name="myTextBox" id="myTextBox" cols="50" rows="5">
+	Enter some text...
+</textarea>
+<br />
+<input type="submit" onclick="doSomething()"/>
+
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+  function getIn() {
+		//var password = document.getElementById("password").value;
+		var select = document.getElementById("theOptions");
+		var selectedValue = select.options[select.selectedIndex].value;
+		var password = document.getElementById("password").value;
+		if (selectedValue === "High School") {
+			if (password  === "highss") {
+				alert("You are logged in as a HSS");
+			}
+			else {
+				alert("The login info was not correct");
+			}
+		} else if (selectedValue === "College"){
+			if (password === "colleges") {
+				alert("You are logged in as a CS");
+			}
+			else {
+				alert("The login info was not correct");
+			}
+		} 
+	}
+	</script>
+<style type="text/css">
+	#tfheader{
+		background-color:#c3dfef;
+	}
+	#tfnewsearch{
+		float:right;
+		padding:20px;
+	}
+	.tftextinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton {
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+	body {
+        background: url("http://georghubner.nl/wp-content/uploads/2015/05/background_flowers.jpg") no-repeat center center fixed;
+        background-size:cover;
+		}
+	
+	#content {
+		position: right;
+	}
+	#content img{
+		margin: 0;
+		padding: 10px 15px;
+		position: left;
+		top: 0;
+		left:0;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	
+	#main {
+		background-color: lightblue;
+		width: 200px;
+		padding: 25px;
+		border: 25px solid green;
+		margin: 66px;
+	}
+	
+	#outer { width: 600px;
+	padding: 25px;
+	margin: 100px;
+	}
+	#inner { width: 250px; margin: 0 auto; }
+
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</style>
+
+  
+  
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+	<div id="content">
+		<img src="file:///C:/Users/Girls%20Who%20Code%200967/Desktop/webapp/logo.JPG" class="logo"width="99" height="86">
+	</div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="homepage.html">Home</a>
+        <li><a href="uci.html">UC Irvine</a>
+        <li><a href="ucb.html">UC Berkeley</a>
+        <li><a href="ucla.html">UCLA</a>
+
+      </ul>
+    </div>
+	<form id="tfnewsearch" method="get" action="http://www.google.com">
+		<input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value="Search our website"><input type="submit" value=">" class="tfbutton2">
+	</form>
+  </div>
+</nav>
+  
+<!-- HTML for SEARCH BAR -->
+	<div data-role="header" id="tfheader">
+		<div class="tfclear"></div>
+		<div id="main" class="ui-content" style="float: right">
+			<form method="post" action="demoform.asp">
+			<fieldset class="ui-field-contain">
+			  <p align="center">Sign In</p>
+				<label for="identifier">I'm a</label>
+				<select name="Grade Level" id="theOptions">
+						<option value="High School">High School Student</option>
+						<option value="College">College Student</option>
+					<label for="password">Password</label>
+					<input type="text" name="password" id="password">   
+				</select>
+				<button type="button" onclick="getIn()" >Submit</button>
+			</fieldset>
+		</div>
+		
+	</div>
+	
+	
+	<div data-role="page"><!--HOMEPAGE STARTS-->
+	
+		<div id="outer" style="height:100%;width:200px;background-color: #EAE6D4">
+		  <div id="inner">Welcome to College Experience!</div>
+			<p>Here you'll learn about college from the actual college students themselves </p>
+		</div>
+	</div>
+  
+
+
+
+</body>
+</html>
